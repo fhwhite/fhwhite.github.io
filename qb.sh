@@ -11,17 +11,21 @@ fhv=''
 echo '
 Select qBittorrent Version:
 1.qBittorrent 4.1.9.1
-2.qBittorrent 4.3.8'
+2.qBittorrent 4.2.5
+3.qBittorrent 4.3.8'
 read -p "Select：" num
 case "$num" in
  1)
    fhv='4.1.9.1'
  ;;
  2)
+   fhv='4.2.5'
+ ;;
+ 3)
    fhv='4.3.8'
  ;;
  *)
-   echo 'please input {1|2}'
+   echo 'please input {1|2|3}'
    exit;
 esac
 
