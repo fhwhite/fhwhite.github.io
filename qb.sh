@@ -46,3 +46,4 @@ systemctl enable docker
 docker pull fhwhite/fhqb:$fhv
 docker create --name=qbittorrent --network host -e UID=1000 -e GID=1000 -e UMASK=022 -v /root/pt/config:/config -v /:/Downloads --restart unless-stopped fhwhite/fhqb:$fhv
 docker start qbittorrent
+wget https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh && bash status.sh c
